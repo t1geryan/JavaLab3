@@ -10,6 +10,13 @@ public class ListCompare {
     private static final int INVOKES_COUNT_MULTIPLIER = 2;
     private static final int COLLECTION_SIZE = 100000;
 
+    /**
+     * Prints tables to the CLI
+     * with execution times of the main ArrayList and LinkedList
+     * methods' calls in many times (1000, 2000, 4000 times).
+     * Tested methods: get, add, remove (from different position).
+     * Displays time in nanoseconds.
+     */
     public static void main(String[] args) {
         var arrayList = new ArrayList<Integer>(COLLECTION_SIZE);
         var linkedList = new LinkedList<Integer>();
